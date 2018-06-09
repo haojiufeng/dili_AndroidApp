@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_title" />
+
+    <include layout="@layout/title_info" />
+
+
+    <ListView
+        android:choiceMode="singleChoice"
+        android:background="@color/white"
+        android:id="@+id/lv_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    </ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="34dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="13.3sp"
+        android:background="@drawable/em_button_login_bg"
+        android:id="@+id/bt_report_special"/>
+    <Button
+        android:layout_marginBottom="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:text="稍后再说"
+        android:textColor="#c5c5c5"
+        android:textSize="13.3sp"
+        android:background="@drawable/em_grey_button"
+        android:id="@+id/bt_jump_special"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rooview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/comm_title" />
+
+        <include layout="@layout/title_info" />
+
+        <ListView
+            android:id="@+id/list_no_eat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:choiceMode="multipleChoice"
+            android:divider="@color/common_backgroud"
+            android:dividerHeight="0.1px"
+            android:scrollbars="none"></ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_ok_noeat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@id/top"
+        android:background="@drawable/em_button_login_bg"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="13.3sp" />
+</RelativeLayout>

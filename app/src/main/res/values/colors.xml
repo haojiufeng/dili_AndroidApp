@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_color">#67A129</color>
+    <color name="common_green">#67A129</color>
+    <color name="white">#FFFFFF</color><!--白色 -->
+
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="lightblue">#ADD8E6</color><!--亮蓝色 -->
+    <color name="green">#008000</color><!--绿色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="gray_f0f0f0">#f0f0f0</color><!--黑色 -->
+
+    <color name="black1">#333333</color><!--黑色 -->
+    <color name="line_view">#dddddd</color><!--黑色 -->
+    <color name="graycolor">#999999</color>
+    <color name="calendar_gray_color">#dddddd</color>
+    <color name="common_backgroud">#f0f0f0</color>
+    <color name="common_orenge">#ff6633</color>
+    <color name="little_orenge">#fdf3e3</color>
+
+    <drawable name="common_green">@color/common_green</drawable>
+    <drawable name="common_black">@color/black1</drawable>
+    <color name="dialog_bg">#eaeaea</color>
+</resources>

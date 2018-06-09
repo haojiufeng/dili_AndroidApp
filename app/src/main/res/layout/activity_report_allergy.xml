@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_title" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/allergy_rootview">
+    <include
+        layout="@layout/title_info"
+        android:visibility="gone" />
+
+    <com.diligroup.view.TagFlowLayout
+        android:id="@+id/tag_allergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        zhy:max_select="10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F0F0F0" />
+
+    <include layout="@layout/line_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/typwleft_listView"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_backgroud"
+            android:childDivider="@color/line_view"
+            android:divider="@color/line_view"
+            android:dividerHeight="0.1dp"
+            android:groupIndicator="@null"
+            android:listSelector="@drawable/backgroud_selector"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/list_foods_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:choiceMode="multipleChoice"
+            android:divider="@color/line_view"
+            android:dividerHeight="0.1dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_view" />
+
+        <Button
+            android:id="@+id/bt_commit_allergy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/em_button_login_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="13.3sp" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:background="@mipmap/head_bg">
+
+            <com.diligroup.view.CircleImageView
+                android:id="@+id/iv_user_header"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/head_default" />
+
+            <TextView
+                android:id="@+id/tv_numb_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_user_header"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@drawable/iv_user_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_go_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_user_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/iv_user_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_user_icon"
+                android:paddingLeft="20dp"
+                android:text="我的资料"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/iv_go_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#DCDCDC" />
+
+        <RelativeLayout
+            android:id="@+id/rl_go_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/iv_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_set"
+                android:paddingLeft="20dp"
+                android:text="设置"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/iv_go_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#DCDCDC" />
+
+        <RelativeLayout
+            android:id="@+id/rl_go_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/iv_service_center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_service"
+                android:paddingLeft="20dp"
+                android:text="服务中心"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/iv_go_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#DCDCDC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="请输入您的宝贵意见 :"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#F0F0F0"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="12sp" />
+    <TextView
+        android:paddingBottom="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="500字"
+        android:id="@+id/text_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/em_button_login_bg"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

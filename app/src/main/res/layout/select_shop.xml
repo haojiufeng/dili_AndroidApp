@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_backgroud"
+    android:orientation="vertical">
+    <include layout="@layout/comm_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/allshop_rootview">
+        <RelativeLayout
+            android:id="@+id/current_shop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/selectshop_map"
+                android:layout_width="9dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="16.7dp"
+                android:src="@mipmap/position_red" />
+
+            <TextView
+                android:id="@+id/select_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/selectshop_map"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/selectshop_details_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/select_shopname"
+                android:layout_below="@id/select_shopname"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/iv_go_more" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/common_backgroud">
+
+            <TextView
+                android:id="@+id/tv_title_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="其他门店"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/tv_title_info"
+                android:src="@drawable/left_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tv_title_info"
+                android:src="@drawable/right_line" />
+        </RelativeLayout>
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/allshop_head_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/selectshop_all_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </LinearLayout>
+</LinearLayout>

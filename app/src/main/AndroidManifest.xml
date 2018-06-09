@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diligroup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 这个权限用于进行网络定位  百度地图api -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <application
+        android:name=".base.DiliApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".home.HomeActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <data android:scheme="znn"/> -->
+        <activity android:name=".login.ModifyPSDActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".login.RegistActivity" />
+        <activity android:name=".my.activity.ReportBirthday" />
+        <activity android:name=".my.activity.ReportHeight_1" />
+        <activity android:name=".my.activity.ReportNoeat" />
+        <activity android:name=".my.activity.ReportOther" />
+        <activity android:name=".my.activity.ReportWork" />
+        <activity android:name=".my.activity.ReportWeight" />
+        <activity android:name=".my.activity.ReportTaste" />
+        <activity android:name=".my.activity.ReportSpecial" />
+        <activity android:name=".my.activity.ReportSex" />
+        <activity android:name=".my.activity.ReportAllergy" />
+        <activity android:name=".my.activity.UserInfoActivity" />
+        <activity android:name=".my.activity.SettingActivity" />
+        <activity android:name=".home.GetCityShopActivity" />
+        <activity android:name=".home.GetAllShop" />
+        <activity android:name=".after.fragment.AfterEvaluate" />
+        <activity
+            android:name=".my.activity.PhysiologicalPeriodActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.FoodDetailsActivity" />
+        <activity android:name=".my.activity.ServiceCenter" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105618804" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <!-- 检测更新service -->
+        <service android:name=".utils.download.UpLoadService" />
+        <service android:name=".utils.download.UpdateService" />
+        <!-- android:exported="true" -->
+        <!-- android:priority="1000" -->
+        <service
+            android:name=".service.StepService"
+            android:process=":process1">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.StepService2"
+            android:process=":process2" />
+
+        <receiver
+            android:name=".utils.record_steps.BootCompleteReceiver"
+            android:process=":process1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".utils.record_steps.BootCompleteReceiver2"
+            android:process=":process2" />
+
+        <activity android:name=".utils.update.UpdateVersionActivity" />
+
+        <service android:name=".service.VersionDownload" />
+        <!-- 友盟key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="577201d4e0f55a7aea0007fd" />
+        <!-- 百度地图api -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uAbFEGdxe5LPaoG1jjC85gHRssYwejAl" />
+        <!-- android:value="3MFvQULXv0yrgNluHkDVbNyqFvekoBgh" /> -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".home.FeedbackActivity" />
+        <activity android:name=".home.ServiceActivity" />
+        <activity
+            android:name=".after.AddLunchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".my.activity.ReportWhere" />
+        <activity android:name=".my.activity.ReportHistory" />
+        <activity android:name=".my.activity.ReportAddress" />
+        <!-- 支付宝第三方登录 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".my.activity.InstructionsActivity" />
+        <activity android:name=".my.activity.MyHelpCenterActivity" />
+        <activity android:name=".my.activity.AboutUsActivity" />
+        <activity
+            android:name=".my.activity.CurrentStepActivity"
+            android:exported="true"
+            android:launchMode="standard" />
+
+        <service
+            android:name=".service.MyPushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":process1"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/line_view"/>
+    <RelativeLayout
+        android:background="@color/common_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="6dp"
+        android:id="@+id/breakfase_layout">
+        <TextView
+            android:background="@drawable/em_button_login_bg"
+            android:text="早餐"
+            android:id="@+id/after_mealname"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_total_kcal"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/title_color"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_reliang"
+            android:layout_toLeftOf="@+id/tv_total_kcal"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:text="能量："
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/line_view"/>
+</LinearLayout>

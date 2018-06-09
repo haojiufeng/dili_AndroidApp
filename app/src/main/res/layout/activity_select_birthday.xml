@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_backgroud"
+    android:orientation="vertical">
+    <include layout="@layout/comm_title" />
+    <include layout="@layout/title_info" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.diligroup.view.WheelView
+            android:id="@+id/wv_height"
+            android:layout_width="0dp"
+            android:layout_height="277dp"
+            android:layout_weight="1" />
+        <com.diligroup.view.WheelView
+            android:id="@+id/wv_height2"
+            android:layout_width="0dp"
+            android:layout_height="277dp"
+            android:layout_weight="1" />
+        <com.diligroup.view.WheelView
+            android:id="@+id/wv_height3"
+            android:layout_width="0dp"
+            android:layout_height="277dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!--<DatePicker-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/data_select"-->
+    <!--android:layoutMode="clipBounds"-->
+    <!--android:calendarViewShown="false"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--</DatePicker>-->
+    <Button
+        android:id="@+id/bt_getTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/em_button_login_bg"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="13.3sp" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="53.3dp">-->
+
+<!--<TextView--><!--android:id="@+id/tv_title_info"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:text=""--><!--android:textSize="12sp" />-->
+
+<!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true"--><!--android:layout_marginRight="15dp"--><!--android:layout_toLeftOf="@id/tv_title_info"--><!--android:src="@drawable/left_line" />-->
+
+<!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true"--><!--android:layout_marginLeft="15dp"--><!--android:layout_toRightOf="@id/tv_title_info"--><!--android:src="@drawable/right_line" />--><!--</RelativeLayout>-->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="53.3dp"
+android:id="@+id/physiological_layout"
+android:background="@color/common_backgroud">
+<TextView
+    android:id="@+id/tv_title_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text=""
+    android:textColor="@color/black1"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:textSize="12sp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="15dp"
+    android:layout_toLeftOf="@id/tv_title_info"
+    android:src="@drawable/left_line" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/tv_title_info"
+    android:src="@drawable/right_line" />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_backgroud"/>
+</RelativeLayout>
+

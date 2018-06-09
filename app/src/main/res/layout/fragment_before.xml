@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_title" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/before_rootview">
+    <LinearLayout
+        android:id="@+id/no_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:src="@mipmap/pic_nointent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络连接错误，请重试" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/web_before"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</FrameLayout>
+</LinearLayout>

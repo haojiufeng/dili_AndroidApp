@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--加载进度-->
+        <LinearLayout
+            android:id="@+id/loading_wrapper"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_p"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_loading"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/main_loading" />
+        </LinearLayout>
+        <!-- 网络错误-->
+        <LinearLayout
+            android:id="@+id/net_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:src="@mipmap/pic_nointent" />
+
+            <TextView
+                android:id="@+id/net_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络连接错误，请重试" />
+        </LinearLayout>
+        <!-- 其它提示-->
+        <LinearLayout
+            android:id="@+id/other_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gray_border_bg"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择车型"
+                android:textColor="@color/graycolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 其它提示-->
+        <LinearLayout
+            android:id="@+id/center_notify_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/notify_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="101dp"
+                android:textColor="@color/graycolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rl_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_shutiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/iv_shutiao" />
+
+        <TextView
+            android:id="@+id/my_work_worktype"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_shutiao"
+            android:text="轻体力"
+            android:textColor="@color/title_color" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10sp"
+            android:id="@+id/my_work_remind"
+            android:text="75%时间坐或站立;25%时间站着活动"
+            android:textColor="#FF6531" />
+    </RelativeLayout>
+
+    <com.diligroup.view.MyGridView
+        android:id="@+id/gv_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:numColumns="4"
+        android:listSelector="@null"
+        android:verticalSpacing="1.0px"
+        android:horizontalSpacing="1.0px"
+        android:soundEffectsEnabled="true"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:background="@color/white"
+        />
+</LinearLayout>

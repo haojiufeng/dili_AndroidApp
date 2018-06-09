@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_right_view"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:layout_marginLeft="3dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/home_right_icon"
+            android:layout_width="55.6dp"
+            android:layout_height="55.6dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/food_icon_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/home_right_icon"
+            android:orientation="vertical"
+            android:layout_marginRight="12dp">
+
+            <TextView
+                android:id="@+id/home_dishes_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="-2dp"
+                android:text="胡萝卜"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/home_dishes_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配料：黄瓜+小葱"
+                android:textColor="#B5ADA1"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@+id/home_evaluate"
+                android:layout_width="57dp"
+                android:layout_height="17dp"
+                android:background="@drawable/kuang_red"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="3.3dp"
+                android:layout_gravity="bottom"
+                android:text="菜品评价"
+                android:textColor="@color/common_orenge"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_below="@id/home_right_icon"-->
+            <!--android:background="@color/common_backgroud"/>-->
+    </RelativeLayout>
+</LinearLayout>

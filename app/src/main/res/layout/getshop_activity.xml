@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_title" />
+    <ListView
+        android:divider="@color/common_backgroud"
+        android:dividerHeight="9px"
+        android:id="@+id/lv_list_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:cacheColorHint="@null">
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/bt_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:visibility="gone"
+        android:background="@drawable/em_button_login_bg"
+        android:text="更多门店"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gulei">
+        　
+        <item>小麦</item>
+        　　
+        <item>大麦</item>
+        　　
+        <item>荞麦</item>
+        　　
+        <item>玉米</item>
+    </string-array>
+    <string-array name="doulei">
+        　
+        <item>红豆</item>
+        　　
+        <item>绿豆</item>
+        　　
+        <item>黄豆</item>
+        　　
+        <item>豌豆</item>
+    </string-array>
+    <string-array name="shucai">
+        　
+        <item>红菜</item>
+        　　
+        <item>红菜</item>
+        　　
+        <item>红菜</item>
+        　　
+        <item>红菜</item>
+    </string-array>
+    <string-array name="fruits">
+        　
+        <item>水果</item>
+        　　
+        <item>水果</item>
+        　　
+        <item>水果</item>
+        　　
+        <item>水果</item>
+        <item>水果</item>
+    </string-array>
+    <string-array name="milks">
+        　
+        <item>牛奶</item>
+        　　
+        <item>牛奶</item>
+        　　
+        <item>牛奶</item>
+        　　
+        <item>牛奶</item>
+        <item>坚果</item>
+    </string-array>
+    <string-array name="jianguo">
+        　
+        <item>坚果</item>
+        　　
+        <item>坚果</item>
+        　　
+        <item>坚果</item>
+        　　
+        <item>坚果</item>
+        <item>坚果</item>
+    </string-array>
+    <string-array name="light">
+        　
+        <item>管理人员</item>
+        　　
+        <item>研发人员</item>
+        　　
+        <item>文职人员</item>
+        　　
+        <item>行政人员</item>
+        <item>医护人员</item>
+        <item>工程师</item>
+        <item>教师</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="middle">
+        　
+        <item>销售人员</item>
+        　　
+        <item>服务人员</item>
+        　　
+        <item>采购人员</item>
+        　　
+        <item>司机</item>
+        <item>学生</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="heavy">
+        　
+        <item>生产人员</item>
+        　　
+        <item>工人</item>
+        　　
+        <item>军人</item>
+        　　
+        <item>舞蹈</item>
+        <item>竞技体育</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="height">
+        　
+        <item>150 cm</item>
+        <item>151 cm</item>
+        <item>152 cm</item>
+
+        <item>153 cm</item>
+        <item>154 cm</item>
+        <item>155 cm</item>
+
+        <item>156 cm</item>
+        <item>157 cm</item>
+        <item>158 cm</item>
+
+        <item>159 cm</item>
+        <item>160 cm</item>
+        <item>161 cm</item>
+
+        <item>162 cm</item>
+        <item>163 cm</item>
+        <item>164 cm</item>
+
+        <item>165 cm</item>
+        <item>166 cm</item>
+        <item>167 cm</item>
+
+        <item>168 cm</item>
+        <item>169 cm</item>
+        <item>170 cm</item>
+
+        <item>171 cm</item>
+        <item>172 cm</item>
+        <item>173 cm</item>
+
+        <item>174 cm</item>
+        <item>175 cm</item>
+        <item>176 cm</item>
+
+        <item>177 cm</item>
+        <item>178 cm</item>
+        <item>179 cm</item>
+
+        <item>180 cm</item>
+        <item>181 cm</item>
+        <item>182 cm</item>
+
+        <item>183 cm</item>
+        <item>184 cm</item>
+        <item>185 cm</item>
+
+        <item>186 cm</item>
+        <item>187 cm</item>
+        <item>188 cm</item>
+
+        <item>189 cm</item>
+    </string-array>
+    <string-array name="weight">
+        　
+        <item>45 kg</item>
+        <item>46 kg</item>
+        <item>47 kg</item>
+
+        <item>48 kg</item>
+        <item>49 kg</item>
+        <item>50 kg</item>
+
+        <item>51 kg</item>
+        <item>52 kg</item>
+        <item>53 kg</item>
+
+        <item>54 kg</item>
+        <item>55 kg</item>
+        <item>56 kg</item>
+
+        <item>57 kg</item>
+        <item>58 kg</item>
+        <item>59 kg</item>
+
+        <item>60 kg</item>
+        <item>61 kg</item>
+        <item>62 kg</item>
+
+        <item>63 kg</item>
+        <item>64 kg</item>
+        <item>65 kg</item>
+
+        <item>66 kg</item>
+        <item>67 kg</item>
+        <item>68 kg</item>
+
+        <item>69 kg</item>
+        <item>70 kg</item>
+        <item>71 kg</item>
+
+        <item>72 kg</item>
+        <item>73 kg</item>
+        <item>74 kg</item>
+
+        <item>75 kg</item>
+        <item>76 kg</item>
+        <item>77 kg</item>
+
+        <item>78 kg</item>
+        <item>79 kg</item>
+        <item>80 kg</item>
+
+        <item>81 kg</item>
+        <item>82 kg</item>
+        <item>83 kg</item>
+
+        <item>84 kg</item>
+        <item>85 kg</item>
+        <item>86 kg</item>
+
+        <item>87 kg</item>
+        <item>88 kg</item>
+        <item>89 kg</item>
+
+        <item>90 kg</item>
+    </string-array>
+    <string-array name="mealchoice">
+        <item>早餐</item>
+        <item>午餐</item>
+        <item>晚餐</item>
+    </string-array>
+    <!--热菜大荤,热菜半荤,热素菜  凉荤菜,凉素菜, 主食  ,烘焙,soup_pressed,冷热饮  ,fruits_pressed,坚果,调味酱汁,-->
+    <string-array name="categories">
+        <item>热菜大荤</item>
+        <item>热菜半荤</item>
+        <item>热素菜</item>
+
+        <item>凉荤菜</item>
+        <item>凉素菜</item>
+        <item>主食</item>
+
+        <item>烘焙</item>
+        <item>汤粥</item>
+        <item>冷热饮</item>
+
+        <item>水果</item>
+        <item>坚果</item>
+        <item>调味酱汁</item>
+    </string-array>
+<string-array name="switch_ip">
+    <item>http://192.168.101.2:8181</item>
+    <item>http://192.168.100.67:8181</item>
+</string-array>
+</resources>
